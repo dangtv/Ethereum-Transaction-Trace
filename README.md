@@ -11,11 +11,11 @@ This repository contains
 
 To build a dataset containing detailed execution traces of Ethereum transactions, we use **Geth** client to download 3000 blocks, from four distinct periods, covering blocks from  number 19519860 to number 20050000.  We then use Geth to replay the downloaded transactions (nearly 0.7M transactions), calling `bug_traceTransaction` function to collect the execution trace.
 
-Install **Geth** to retrieve data for an archive node: ~19TB.  
+1. Install **Geth** to retrieve data for an archive node: ~19TB.  
 
-Use the command `geth sync ...` to sync and retrieve archive node data.  
+2. Use the command `geth sync ...` to sync and retrieve archive node data.  
 
-1. **Collect Data**: Use `TraceCollection.py`.  
+3. **Start collecting Data**: Run `TraceCollection.py`.
 
 ### Collected dataset
 
